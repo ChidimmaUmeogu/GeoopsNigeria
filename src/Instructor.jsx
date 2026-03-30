@@ -4,7 +4,7 @@ import { ref, set, get, onValue, update, remove } from "firebase/database";
 import { MISSIONS, getRank } from "./data";
 import { Pulse, Badge, Card, Btn, SectionLabel, Divider } from "./ui";
 
-const INSTRUCTOR_PIN = "1234";
+const INSTRUCTOR_PIN = "2026";
 
 export default function InstructorView() {
   const [authed, setAuthed]       = useState(false);
