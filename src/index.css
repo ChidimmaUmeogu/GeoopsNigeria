@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #060D09;
+  --bg2:       #0A0F0D;
+  --bg3:       #0F1A14;
+  --border:    #1A5632;
+  --green:     #4ADE80;
+  --green-dim: #2E7D52;
+  --gold:      #F4A620;
+  --blue:      #60A5FA;
+  --red:       #EF4444;
+  --text:      #CBD5E1;
+  --muted:     #64748B;
+  --mono:      'Space Mono', monospace;
+  --display:   'Bebas Neue', sans-serif;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+button { font-family: var(--mono); cursor: pointer; }
+input, textarea, select { font-family: var(--mono); }
+
+/* Animations */
+@keyframes pulse    { 0%,100%{opacity:1} 50%{opacity:.35} }
+@keyframes fadeUp   { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+@keyframes slideIn  { from{opacity:0;transform:translateY(-12px)} to{opacity:1;transform:translateY(0)} }
+@keyframes glow     { 0%,100%{text-shadow:0 0 20px #4ADE8055} 50%{text-shadow:0 0 45px #4ADE80aa} }
+@keyframes scanline { 0%{top:-5%} 100%{top:105%} }
+@keyframes barGrow  { from{width:0} to{width:var(--bar-w)} }
+@keyframes popIn    { 0%{transform:scale(.85);opacity:0} 60%{transform:scale(1.04)} 100%{transform:scale(1);opacity:1} }
+@keyframes shake    { 0%,100%{transform:translateX(0)} 20%,60%{transform:translateX(-5px)} 40%,80%{transform:translateX(5px)} }
