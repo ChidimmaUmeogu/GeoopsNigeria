@@ -7,7 +7,6 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCeDc72CruLXZBNHsvZbHvhiuihdPGMtKo",
   authDomain: "geoops-nigeria.firebaseapp.com",
   databaseURL: "https://geoops-nigeria-default-rtdb.firebaseio.com",
   projectId: "geoops-nigeria",
